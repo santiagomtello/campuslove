@@ -86,7 +86,7 @@ namespace CampusLove.Infrastructure.repositories
             if (interes == null)
                 throw new ArgumentNullException(nameof(interes));
 
-            const string query = "UPDATE Intereses SET descripcion = @descripcion WHERE id = @Id";
+            const string query = "UPDATE Intereses SET Descripcion = @descripcion WHERE Id = @Id";
             using var transaction = await _connection.BeginTransactionAsync();
 
             try

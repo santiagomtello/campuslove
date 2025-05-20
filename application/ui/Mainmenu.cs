@@ -29,17 +29,16 @@ namespace CampusLove.Application.ui
             while (!salir)
             {
                 Console.Clear();
-                MostrarEncabezado("💖 CAMPUS LOVE 💖");
+                MostrarEncabezado(" CAMPUSLOVE ");
 
-                Console.ForegroundColor = ConsoleColor.Cyan;
-                Console.WriteLine("\n🌟 MENÚ PRINCIPAL 🌟");
+                Console.WriteLine("\n MENÚ PRINCIPAL ");
                 Console.ResetColor();
 
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("1. ✍️ Registrarse");
-                Console.WriteLine("2. 🔑 Iniciar Sesión");
-                Console.WriteLine("3. 📊 Mostrar estadísticas del sistema");
-                Console.WriteLine("0. 🚪 Salir");
+                Console.ForegroundColor = ConsoleColor.Red	;
+                Console.WriteLine("1.  Registrarse");
+                Console.WriteLine("2.  Iniciar Sesión");
+                Console.WriteLine("3.  Mostrar estadísticas del sistema");
+                Console.WriteLine("0.  Salir");
                 Console.ResetColor();
 
                 Console.ForegroundColor = ConsoleColor.Green;
@@ -68,7 +67,7 @@ namespace CampusLove.Application.ui
                 }
             }
 
-            MostrarMensaje("\n💖 ¡Gracias por usar Campus Love! 💖", ConsoleColor.DarkGreen);
+            MostrarMensaje("\n ¡Gracias por usar Campus Love! ", ConsoleColor.DarkGreen);
         }
 
         private void MostrarMensaje(string mensaje, ConsoleColor color)
@@ -81,7 +80,7 @@ namespace CampusLove.Application.ui
 
         public static void MostrarEncabezado(string titulo)
         {
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Magenta;
 
             string borde = new string('═', titulo.Length + 6);
             Console.WriteLine($"╔{borde}╗");

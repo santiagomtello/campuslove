@@ -60,7 +60,7 @@ namespace campuslove.application.ui
         private async Task VerTodosLosMatches(Usuario usuarioActual)
         {
             Console.Clear();
-            Console.WriteLine("=== 💞 TODOS LOS MATCHES 💞 ===\n");
+            Console.WriteLine("===  TODOS LOS MATCHES  ===\n");
 
             try
             {

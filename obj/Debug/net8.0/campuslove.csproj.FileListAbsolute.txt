@@ -38,3 +38,4 @@ C:\Users\santiago\Desktop\campuslove\campuslove\obj\Debug\net8.0\refint\campuslo
 C:\Users\santiago\Desktop\campuslove\campuslove\obj\Debug\net8.0\campuslove.pdb
 C:\Users\santiago\Desktop\campuslove\campuslove\obj\Debug\net8.0\campuslove.genruntimeconfig.cache
 C:\Users\santiago\Desktop\campuslove\campuslove\obj\Debug\net8.0\ref\campuslove.dll
+C:\Users\santiago\Desktop\campuslove\campuslove\obj\Debug\net8.0\campuslove.sourcelink.json

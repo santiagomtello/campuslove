@@ -25,10 +25,6 @@ namespace campuslove.application.ui
                 Console.WriteLine("1. Perfil con más likes recibidos");
                 Console.WriteLine("2. Perfil con menos likes recibidos");
                 Console.WriteLine("3. Usuario con más interacciones realizadas");
-                Console.WriteLine("4. Perfil con más matches");
-                Console.WriteLine("5. Perfil con menos matches");
-                Console.WriteLine("6. Promedio de edad de perfiles");
-                Console.WriteLine("7. Estadísticas generales");
                 Console.WriteLine("0. Volver al menú principal");
                 
                 Console.Write("\nSeleccione una opción: ");
@@ -46,12 +42,6 @@ namespace campuslove.application.ui
                             break;
                         case "3":
                             await MostrarPerfilConMasInteraccionesHechas();
-                            break;
-                        case "4":
-                            await MostrarPerfilConMasMatches();
-                            break;
-                        case "5":
-                            await MostrarPerfilConMenosMatches();
                             break;
                         case "0":
                             return true;
@@ -75,7 +65,7 @@ namespace campuslove.application.ui
         {
             var resultado = await _estadisticasRepository.ObtenerPerfilConMasLikesAsync();
             Console.Clear();
-            Console.WriteLine("❤️ Perfil con más likes recibidos");
+            Console.WriteLine(" Perfil con más likes recibidos");
 
             if (resultado != null)
             {
@@ -95,7 +85,7 @@ namespace campuslove.application.ui
         {
             var resultado = await _estadisticasRepository.ObtenerPerfilConMenosLikesAsync();
             Console.Clear();
-            Console.WriteLine("❤️ Perfil con menos likes recibidos");
+            Console.WriteLine(" Perfil con menos likes recibidos");
 
             if (resultado != null)
             {
@@ -115,7 +105,7 @@ namespace campuslove.application.ui
         {
             var resultado = await _estadisticasRepository.ObtenerPerfilConMasMatchesAsync();
             Console.Clear();
-            Console.WriteLine("💘 Perfil con más matches realizados");
+            Console.WriteLine(" Perfil con más matches realizados");
 
             if (resultado != null)
             {

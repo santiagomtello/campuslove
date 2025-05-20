@@ -99,11 +99,11 @@ namespace campuslove.application.ui
             foreach (var perfil in perfiles)
             {
                 Console.Clear();
-                Console.WriteLine($"📋 Perfil de {perfil.Nombre}");
-                Console.WriteLine($"👤 Edad: {perfil.Edad}");
-                Console.WriteLine($"⚧ Género: {perfil.Genero.Descripcion}");
-                Console.WriteLine($"❤️ Orientación: {perfil.Orientacion.Descripcion}");
-                Console.WriteLine($"📝 Descripción: {perfil.Descripcion}");
+                Console.WriteLine($" Perfil de {perfil.Nombre}");
+                Console.WriteLine($" Edad: {perfil.Edad}");
+                Console.WriteLine($" Género: {perfil.Genero.Descripcion}");
+                Console.WriteLine($" Orientación: {perfil.Orientacion.Descripcion}");
+                Console.WriteLine($" Descripción: {perfil.Descripcion}");
 
                 // Verificar si ya interactuó con este perfil
                 bool yaDioLike = await _interaccionRepository.VerificarLike(usuarioActual.Id, perfil.Id);
@@ -121,11 +121,11 @@ namespace campuslove.application.ui
                 {
                     // Verificar límite de likes solo si no ha dado like ni dislike
                     int conteoLikes = await _interaccionRepository.ObtenerConteoLikes(usuarioActual.Id);
-                    Console.WriteLine($"\n❤️ Likes restantes hoy: {MAX_LIKES - conteoLikes}");
+                    Console.WriteLine($"\n👍 Likes restantes hoy: {MAX_LIKES - conteoLikes}");
                 }
 
                 Console.WriteLine("\n¿Qué acción desea realizar?");
-                Console.WriteLine("1. Dar Like ❤️");
+                Console.WriteLine("1. Dar Like 👍");
                 Console.WriteLine("2. Dar Dislike 👎");
                 Console.WriteLine("3. Ver siguiente perfil ➡️");
                 Console.WriteLine("0. Volver al menú principal ↩️");
@@ -217,7 +217,7 @@ namespace campuslove.application.ui
                 }
                 else
                 {
-                    Console.WriteLine("\n❤️ ¡Like enviado!");
+                    Console.WriteLine("\a 👍n ¡Like enviado!");
                 }
                 Console.ReadKey();
             }
